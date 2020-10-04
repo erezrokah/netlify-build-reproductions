@@ -27,7 +27,9 @@
     "husky": "^4.0.7",
     "prettier": "^2.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "nimbella-cli": "https://apigcp.nimbella.io/downloads/nim/nimbella-cli.tgz"
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
