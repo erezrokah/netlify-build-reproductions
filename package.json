@@ -28,6 +28,7 @@
     "prettier": "^2.0.0"
   },
   "dependencies": {
+    "netlify-plugin-nimbella": "^1.4.1",
     "nimbella-cli": "https://apigcp.nimbella.io/downloads/nim/nimbella-cli.tgz"
   },
   "husky": {
