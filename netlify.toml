@@ -11,3 +11,6 @@
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  trailingSlash = true
