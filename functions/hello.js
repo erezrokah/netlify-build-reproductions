@@ -1,4 +1,4 @@
-export const hello = (event, content) => {
+export const handler = async (event) => {
   console.log(event);
 
   return {

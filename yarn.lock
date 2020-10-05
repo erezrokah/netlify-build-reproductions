@@ -6035,7 +6035,7 @@ nested-error-stacks@^2.0.0:
     webpack "^4.17.1"
     webpack-merge "^4.1.4"
 
-netlify-plugin-nimbella@^1.4.1:
+netlify-plugin-nimbella@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/netlify-plugin-nimbella/-/netlify-plugin-nimbella-1.5.0.tgz#830e92aa1e7905446bad3add3719af2e8d47cdb4"
   integrity sha512-SXZESgFyUlomTUAG1phkUJUNuCljga50nZxlpvYUKdXu5d3eXPKkwxxfnlhZgVOCFdoqIwUwES1tHoI7S/s/Cw==
