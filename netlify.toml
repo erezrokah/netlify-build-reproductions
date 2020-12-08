@@ -13,3 +13,6 @@ package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugins/local.js"
+
+[[plugins]]
+package = "netlify-plugin-cache"
