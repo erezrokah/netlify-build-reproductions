@@ -10,3 +10,6 @@
     
 [[plugins]]
 package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+package = "./plugins/local.js"
