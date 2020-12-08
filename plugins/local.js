@@ -1,5 +1,7 @@
+const fs = require('fs');
 module.exports = {
   onPreBuild: () => {
-    console.log('onPreBuild');
+    const files = fs.readdirSync('.netlify/plugins/node_modules');
+    console.log('onPreBuild', JSON.stringify(files, null, 2));
   },
 };
