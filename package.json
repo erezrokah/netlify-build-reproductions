@@ -23,13 +23,11 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@netlify/plugin-sitemap": "^0.5.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",
     "husky": "^4.0.7",
     "prettier": "^2.0.0"
-  },
-  "dependencies": {
-    "@netlify/plugin-sitemap": "^0.5.1"
   },
   "husky": {
     "hooks": {
