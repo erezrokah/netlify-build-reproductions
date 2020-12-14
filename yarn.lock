@@ -253,9 +253,9 @@
     strip-json-comments "^3.1.1"
 
 "@netlify/plugin-sitemap@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-sitemap/-/plugin-sitemap-0.5.1.tgz#609a6593749054b65f012f196ce9679b40b787d9"
-  integrity sha512-sPLbFUrggyQiN80WHia8JOW7G+cYQj3Imrwp98Hg8XwpEw/WI/7zYvIzW561z5JmT+zLIpG9ZGM8xtqb+0BFGg==
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-sitemap/-/plugin-sitemap-0.5.2.tgz#a30cfa536c0dfcdbfa738716947d8e722e4030bf"
+  integrity sha512-EdkMmfW699m58RTQjwbqQj5ed93D6qj7QXEq7dt9Uwk7Zx664qXmByIdDpYD1VAh/r53Ai1h2Fpk3I72LceNPw==
   dependencies:
     globby "^10.0.1"
     mkdirp "^1.0.4"
@@ -301,9 +301,9 @@
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
 "@types/node@*":
-  version "14.14.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.10.tgz#5958a82e41863cfc71f2307b3748e3491ba03785"
-  integrity sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
+  version "14.14.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.13.tgz#9e425079799322113ae8477297ae6ef51b8e0cdf"
+  integrity sha512-vbxr0VZ8exFMMAjCW8rJwaya0dMCDyYW2ZRdTyjtrCvJoENMpdUHOT/eTzvgyA5ZnqRZ/sI0NwqAxNHKYokLJQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
