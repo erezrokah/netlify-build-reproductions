@@ -13,6 +13,7 @@
 package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]
+  filePath = "some/subfolder/sitemap.xml"
   trailingSlash = true
   changeFreq = "daily"
   priority = 0.5
