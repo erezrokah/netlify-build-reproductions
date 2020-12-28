@@ -252,10 +252,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@netlify/plugin-sitemap@^0.5.1":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-sitemap/-/plugin-sitemap-0.5.2.tgz#a30cfa536c0dfcdbfa738716947d8e722e4030bf"
-  integrity sha512-EdkMmfW699m58RTQjwbqQj5ed93D6qj7QXEq7dt9Uwk7Zx664qXmByIdDpYD1VAh/r53Ai1h2Fpk3I72LceNPw==
+"@netlify/plugin-sitemap@^0.6.0":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-sitemap/-/plugin-sitemap-0.6.1.tgz#16105499f6346276da888f8fea3c30681043664e"
+  integrity sha512-ScQm2+dYoMhYcQ8T/H7RcFpPHhzBWanY1PtGBeWtSeBpEYPsZRIQ3p6itRs2d0thUNcB2uyWPr+/m1eJBbQZAg==
   dependencies:
     globby "^10.0.1"
     mkdirp "^1.0.4"
