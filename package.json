@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "netlify-lambda build lambda -c webpack.config.js",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:ci": "prettier --check .",
@@ -26,6 +27,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",
     "husky": "^4.0.7",
+    "netlify-lambda": "^2.0.3",
     "prettier": "^2.0.0"
   },
   "husky": {
