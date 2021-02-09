@@ -1,7 +1,7 @@
 [build]
   command = "echo 'no op'"
   publish = "public"
-  functions = "functions"
+  functions = "lambda"
 
   [build.environment]
     YARN_FLAGS = "--frozen-lockfile"

@@ -7,6 +7,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:ci": "prettier --check .",
+    "lambda:build": "netlify-lambda build functions",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,9 +24,12 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@sentry/node": "^6.1.0",
+    "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",
     "husky": "^4.0.7",
+    "netlify-lambda": "^2.0.3",
     "prettier": "^2.0.0"
   },
   "dependencies": {
