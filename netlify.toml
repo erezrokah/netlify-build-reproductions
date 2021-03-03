@@ -4,4 +4,7 @@ functions = "functions"
 publish = "public"
 
 [build.environment]
-NODE_VERSION = "15"
+NODE_VERSION = "node"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
