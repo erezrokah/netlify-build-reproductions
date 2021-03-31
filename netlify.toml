@@ -1,6 +1,5 @@
 [build]
 command = "echo 'no op'"
-functions = "functions"
 publish = "public"
 
 [build.environment]
