@@ -1,18 +1,15 @@
 [build]
-  command = "echo 'no op'"
-  publish = "public"
+command = "echo 'no op'"
+functions = "functions/"
+publish = "public"
 
-  functions = "functions/"
-
-  [build.environment]
-    YARN_FLAGS = "--frozen-lockfile"
-    YARN_VERSION = "1.22.4"
-    NODE_VERSION = "12"
-  
-[[redirects]]
-  from = "/a"
-  to = "/docs/a"
+[build.environment]
+NODE_VERSION = "15"
 
 [[redirects]]
-  from = "/docs/*"
-  to = "/docs/b/:splat"
+from = "/a"
+to = "/docs/a"
+
+[[redirects]]
+from = "/docs/a"
+to = "/docs/b/b"
