@@ -11,5 +11,5 @@ from = "/a"
 to = "/docs/a"
 
 [[redirects]]
-from = "/docs/a"
-to = "/docs/b/b"
+from = "/docs/*"
+to = "/docs/b/:splat"
