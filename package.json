@@ -32,5 +32,8 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
