@@ -5,3 +5,6 @@ publish = "public"
 
 [build.environment]
 NODE_VERSION = "15"
+
+[functions]
+node_bundler = "esbuild"
