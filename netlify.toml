@@ -5,3 +5,6 @@ publish = "public"
 
 [build.environment]
 NODE_VERSION = "15"
+
+[[plugins]]
+package = "./plugins/mutator"
