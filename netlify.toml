@@ -4,7 +4,9 @@ functions = "functions"
 publish = "public"
 
 [build.environment]
-NODE_VERSION = "node"
+NODE_VERSION = "12"
 
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
+[plugins.inputs]
+output_path = "reports/lighthouse.html"
