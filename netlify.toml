@@ -5,3 +5,11 @@ publish = "public"
 
 [build.environment]
 NODE_VERSION = "15"
+
+[[redirects]]
+conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+force = false
+from = "/old-path"
+query = {path = ":path"}
+status = 301
+to = "/new-path"
