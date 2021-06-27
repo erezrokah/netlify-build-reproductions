@@ -1,7 +1,9 @@
 [build]
-command = "echo 'no op'"
-functions = "functions"
+command = "echo $AWS_SECRET_SECRET_NAME"
 publish = "public"
 
 [build.environment]
-NODE_VERSION = "15"
+NODE_VERSION = "node"
+
+[[plugins]]
+package = "@netlify/plugin-secrets-manager"

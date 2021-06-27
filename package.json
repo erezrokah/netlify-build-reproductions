@@ -23,6 +23,7 @@
   "devDependencies": {
     "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^12.0.0",
+    "@netlify/plugin-secrets-manager": "github:netlify-labs/netlify-plugin-secrets-manager",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",
     "husky": "^4.0.7",
