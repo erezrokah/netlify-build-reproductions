@@ -1,5 +1,5 @@
 [build]
-command = "echo $GH_TOKEN && echo $ENV"
+command = "echo GH_TOKEN=$GH_TOKEN && echo Env=$ENV"
 functions = "functions"
 publish = "public"
 
