@@ -1,7 +1,7 @@
 [build]
-command = "echo 'no op'"
+command = "echo $GH_TOKEN && echo $ENV"
 functions = "functions"
 publish = "public"
 
 [build.environment]
-NODE_VERSION = "15"
+NODE_VERSION = "16"
