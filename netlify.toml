@@ -1,5 +1,5 @@
 [build]
-command = "echo 'no op'"
+command = "bash yarn-installer.sh --version 1.22.10"
 functions = "functions"
 publish = "public"
 
