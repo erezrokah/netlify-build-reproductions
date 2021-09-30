@@ -1,5 +1,5 @@
 [build]
-command = "curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && rm -rf /opt/buildhome/.yarn && bash yarn-installer.sh --version 1.22.10"
+command = "echo 'no op'"
 functions = "functions"
 publish = "public"
 
