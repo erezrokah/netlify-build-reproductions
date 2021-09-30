@@ -4,7 +4,7 @@ on:
   - status
 
 jobs:
-  build:
+  set-status:
     runs-on: ubuntu-latest
     steps:
       - name: Print event data
