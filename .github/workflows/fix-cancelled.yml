@@ -4,15 +4,10 @@ on:
   - status
 
 jobs:
-  build:
+  set-status:
     runs-on: ubuntu-latest
     steps:
-      - name: Print event data
-        env:
-          GITHUB_EVENT: ${{ toJSON(github.event) }}
-        run: |
-          echo "$GITHUB_EVENT"
-      # - uses: ouzi-dev/commit-status-updater@v1.1.0
-      #   if: ''
-      #   with:
-      #     status: 'success'
+      - uses: ouzi-dev/commit-status-updater@v1.1.0
+        if: contains(github.event.description, 'Deploy Preview canceled')
+        with:
+          status: 'success'
