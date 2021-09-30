@@ -1,0 +1,17 @@
+name: Update status
+
+on: status
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print event data
+        env:
+          GITHUB_EVENT: ${{ toJSON(github.event) }}
+        run: |
+          echo "$GITHUB_EVENT"
+      # - uses: ouzi-dev/commit-status-updater@v1.1.0
+      #   if: ''
+      #   with:
+      #     status: 'success'
