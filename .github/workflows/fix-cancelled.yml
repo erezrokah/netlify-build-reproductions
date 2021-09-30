@@ -1,6 +1,11 @@
 name: Update status
 
-on: status
+on:
+  - status
+  - check_run
+  - check_suite
+  - deployment
+  - deployment_status
 
 jobs:
   build:
