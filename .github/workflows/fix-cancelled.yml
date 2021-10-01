@@ -1,0 +1,30 @@
+name: Update status
+
+on:
+  - status
+
+jobs:
+  set-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: update status
+        if: contains(github.event.state, 'Deploy Preview canceled')
+        run: |
+          curl --request POST \
+          --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.event.sha }} \
+          --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          --header 'content-type: application/json' \
+          --data '{"state":"success", "context":"${{ github.event.context }}"}' \
+          --fail
+      - name: update checks
+        if: contains(github.event.state, 'Deploy Preview canceled')
+        run: |
+          curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' --header "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/commits/${{ github.event.sha }}/check-runs > data.json
+          checks=$(cat data.json | jq '[.check_runs[] | select(.app.slug == "netlify")]')
+
+          for row in $(echo "${checks}" | jq -r '.[] | @base64'); do
+              _jq() {
+                echo ${row} | base64 --decode | jq -r ${1}
+              }
+          curl -X PATCH --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' --header "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/check-runs/$(_jq '.id') -d '{"conclusion":"neutral"}'
+          done
