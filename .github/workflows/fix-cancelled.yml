@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: update status
-        if: contains(github.event.state, 'Deploy Preview canceled')
+        if: contains(github.event.description, 'Deploy Preview canceled')
         run: |
           curl --request POST \
           --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.event.sha }} \
