@@ -17,7 +17,7 @@ jobs:
           --data '{"state":"success", "context":"${{ github.event.context }}"}' \
           --fail
       - name: update checks
-        if: contains(github.event.state, 'Deploy Preview canceled')
+        if: contains(github.event.description, 'Deploy Preview canceled')
         run: |
           curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' --header "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/commits/${{ github.event.sha }}/check-runs > data.json
           checks=$(cat data.json | jq '[.check_runs[] | select(.app.slug == "netlify")]')
