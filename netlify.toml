@@ -1,7 +1,7 @@
 [build]
-command = "echo 'no op'"
 functions = "functions"
 publish = "public"
+ignore = ". /opt/buildhome/.netlify-build-nvm/nvm.sh && node ignore.js"
 
 [build.environment]
 NODE_VERSION = "15"
