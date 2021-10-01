@@ -2,6 +2,7 @@
 command = "env"
 functions = "functions"
 publish = "public"
+ignore = "env"
 
 [build.environment]
 NODE_VERSION = "15"
