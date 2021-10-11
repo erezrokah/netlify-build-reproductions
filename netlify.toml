@@ -2,6 +2,3 @@
 command = "echo 'no op'"
 functions = "functions"
 publish = "public"
-
-[build.environment]
-NODE_VERSION = "15"
