@@ -1,4 +1,4 @@
 [build]
-command = "echo 'no op'"
+command = "yarn add netlify-cli && echo 'no op'"
 functions = "functions"
 publish = "public"
