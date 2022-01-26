@@ -1,3 +1,5 @@
+const { util } = require('./utils/common');
+
 exports.handler = async () => {
-  return { statusCode: 200, body: 'index.js' };
+  return { statusCode: 200, body: util() };
 };
